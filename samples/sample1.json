@@ -1,0 +1,104 @@
+{
+	"data": [
+	
+		{
+			"_id": "vec3",
+			"category": "As a Developer, my strong suit is to create web applications using the latest technologies, such as React, Next.js, Angular and TanStack.",
+			"chunk_text": "Skills"
+		},
+		{
+			"_id": "vec4",
+			"chunk_text": "I've work with NextJS in my last project, where I created web application for a school, where I used Zustand, Prisma ORM, Redis and Cypress",
+			"category": "Skills"
+		},
+		{
+			"_id": "vec5",
+			"category": "Skills",
+			"chunk_text": "I also have work with Angular in Intellysis, with Redux and RxJS"
+		},
+		{
+			"_id": "vec6",
+			"category": "Skills",
+			"chunk_text": "I also have work many other framework in sites and school projects , such as TanStack, Fluter, Springboot"
+		},
+		{
+			"id": "vec7",
+			"category": "Skills",
+			"chunk_text": "This website is created with Convex, Clerk and Shadcn"
+		},
+		{
+			"_id": "vec8",
+			"category": "Aspirations",
+			"chunk_text": "I want a remote job, where I cant work from anywhere, and I can have a flexible schedule"
+		},
+		{
+			"_id": "vec9",
+			"category": "Skills",
+			"chunk_text": "I also have experience working with GCP (Google Cloud Platform) and AWS (Amazon web Services)"
+		},
+		{
+			"_id": "vec10",
+			"category": "Skills",
+			"chunk_text": "I also have experience working with Docker and Containerization"
+		},
+		{
+			"_id": "vec11",
+			"category": "Education",
+			"chunk_text": "I currently studying Computer Science at PUCMM (Pontificia Universidad Madre y Maestra)"
+		},
+		{
+			"_id": "vec12",
+			"category": "Education",
+			"chunk_text": "I have many diplomas in web development, such as React from online platforms"
+		},
+		{
+			"_id": "vec13",
+			"category": "Acknowledgment",
+			"chunk_text": "In 2023, i won the first place in the annual hackthon, promoted by VoiceTeam"
+		},
+		{
+			"_id": "vec13",
+			"category": "Education",
+			"chunk_text": "I studied in Cinncinatus Institute of Craftmanship, as complementary education to my technical high school, where I learned about programming and web development"
+		},
+		{
+			"_id": "vec14",
+			"category": "Education",
+			"chunk_text": "In my way to be a computer science engineer, I have learned about many topics, such as algorithms, data structures, databases, and operative system"
+		},
+		{
+			"_id": "vec15",
+			"category": "Aspirations",
+			"chunk_text": "I would like to work with React,preferably NextJS"
+		}
+    
+	],
+
+	"extra": [
+		{
+			"_id": "vec1",
+			"chunk_text": "I'm Nelcido, I to play video games, I really like to play Survival horror ones, like Resident Evil, Dead Space and Silent Hill",
+			"category": "Hobbies"
+		},
+		{
+			"_id": "vec2",
+			"chunk_text": "I'm Nelcido, I also like to read manga a books, specially science fiction and dark fantasy ones, like Berserk or Dune",
+			"category": "Hobbies"
+		},
+		{
+            "_id": "vec18",
+            "category": "Hobbies",
+            "chunk_text": "When i have time, I also like to watch a movie, o series, like Arcane"
+        },
+		{
+            "_id": "vec16",
+            "category": "Personal",
+            "chunk_text": "I have a big imagination, I'm usually searching for new things to develop"
+        },
+        {
+            "_id": "vec17",
+            "category": "Personal",
+            "chunk_text": "I dont like to stress, so i tried to take the things chill as i can"
+        }
+	]
+}

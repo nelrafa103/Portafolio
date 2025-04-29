@@ -1,0 +1,300 @@
+{
+	"about": {
+		"info":{
+			"title": "Welcome to the AI Assistant",
+			"subtitle": "Ask anythin about me"
+		},
+		"title": "AI assitant",
+		"button": {
+			"title": "Send Message"
+		}
+	},
+	"footer": {
+		"about": {
+			"title": "About",
+			"url": "/about"
+		},
+		"contact": {
+			"title": "Contact",
+			"url": "/contact"
+		},
+		"projects": {
+			"title": "Projects",
+			"url": "/projects"
+		}
+	},
+	"skills": {
+		"title": "Featured Project",
+		"subtitle": "Some projects I have worked on",
+		"button": {
+			"title": "Know more"
+		}
+	},
+	"dashboard": {
+		"title": "Dashboard",
+		"github": {
+			"title": "GitHub",
+			"url": "https://github.com/nelrafa103"
+		},
+		"projects": {
+			"add": {
+				"title": "Formulary to add a new project",
+				"buttons": {
+					"save": {
+						"title": "Save project"
+					},
+					"cancel": {
+						"title": "Cancel"
+					}
+				},
+				"input": {
+					"name": {
+						"label": "Name",
+						"placeholder": "Project name",
+						"description": "Enter the project name"
+					},
+					"repo": {
+						"label": "Repository",
+						"placeholder": "Project link",
+						"description": "Enter the project link"
+					},
+					"description": {
+						"label": "Description",
+						"placeholder": "Project description",
+						"description": "Enter the project description"
+					}
+				}
+			}
+		}
+	},
+	"projects": {
+		"button": {
+			"title": "Stars"
+		},
+		"title": "Projects",
+		"description": "A collection of my work and projects",
+		"items": {
+			"description": {
+				"default": "This project doesnt have a description"
+			}
+		}
+	},
+	"sidebar": {
+		"title": "Nelcido Diaz",
+		"main": {
+			"projects": {
+				"title": "Projects",
+				"items": {
+					"add": {
+						"title": "Add Project",
+						"url": "/dashboard/projects/add",
+						"icon": "Add"
+					},
+					"edit": {
+						"title": "Edit Project",
+						"url": "/dashboard/projects",
+						"icon": "Edit"
+					},
+					"order": {
+						"title": "Order Projects",
+						"url": "/dashboard/projects",
+						"icon": "Order"
+					}
+				}
+			},
+			"messages": {
+				"title": "Messages",
+				"icon": "Mail"
+			}
+		},
+		"convex": {
+			"title": "Convex",
+			"items": {
+				"database": {
+					"title": "Database",
+					"url": "/dashboard/convex/database",
+					"icon": "IconDatabase"
+				}
+			}
+		},
+		"buttons": {
+			"primary": {
+				"title": "Send Message",
+				"icon": "PrimaryIcon"
+			},
+			"secondary": {
+				"title": "Open Gmail",
+				"icon": "Gmail"
+			}
+		},
+		"secondary": {
+			"items": {
+				"settings": {
+					"title": "Settings",
+					"icon": "SettingsIcon",
+					"url": "/dashboard/settings"
+				},
+				"search": {
+					"title": "Search",
+					"url": "/dashboard/search",
+					"icon": "SearchIcon"
+				}
+			}
+		}
+	},
+	"logos": {
+		"title": "Current tecnologies used to build this portfolio"
+	},
+	"hero": {
+		"cookies": {
+			"title": "Cookies policy",
+			"description": "There some features in this site that use cookies to work properly.",
+			"button": {
+				"acept": "Accept cookies",
+				"decline": "Decline",
+				"icon": "AcceptIcon"
+			}
+		},
+		"social": {
+			"title": "Watch my latest video",
+			"span": "New",
+			"icon": "Youtube"
+		},
+		"title": "Nelcido Rafael Diaz Delgado",
+		"subtitle": "Hi,I'am a Full Stack Developer",
+		"input": {
+			"placeholder": "Enter on contact with me",
+			"button": {
+				"title": "Contact me"
+			}
+		},
+		"skills": {
+			"nextjs": {
+				"title": "Next.js",
+				"description": "Proficient in building server-side rendered applications using Next.js"
+			},
+			"tanstack": {
+				"title": "TanStack Start",
+				"description": "Expert in using TanStack Query and TanStack Router for efficient data fetching and routing"
+			},
+			"angular": {
+				"title": "Angular",
+				"description": "Skilled in developing dynamic web applications using Angular"
+			}
+		}
+	},
+	"navbar": {
+		"search": {
+			"recommendations": {
+				"tecnologies": "Stack:"
+			}
+		},
+		"items": {
+			"home": { "title": "Home", "url": "/" },
+			"about": { "title": "About", "url": "/about" },
+			"projects": { "title": "Projects", "url": "/projects" },
+			"contact": { "title": "Contact", "url": "/contact" }
+		},
+		"social": {
+			"github": {
+				"title": "GitHub",
+				"url": "https://github.com/nelrafa103",
+				"icon": "Github"
+			},
+			"linkedin": {
+				"title": "LinkedIn",
+				"url": "https://linkedin.com/in/NelcidoDiaz",
+				"icon": "LinkedIn"
+			}
+		}
+	},
+	"contact": {
+		"title": "Enter in contact with me",
+		"advise": {
+			"text": "For any questions or inquiries, please feel free to reach out to me.",
+			"link": {
+				"title": "privacy policy",
+				"url": "/"
+			}
+		},
+		"subtitle": "In non libero bibendum odio pellentesque ullamcorper. Aenean condimentum, dolor commodo pulvinar bibendum.",
+		"offer": {
+			"title": "What you can expect:",
+			"list": {
+				"feature": "Detailed product presentation tailored to you",
+				"advantage": "Consulting on your messaging strategy",
+				"support": "Answers to all the questions you have"
+			}
+		},
+		"form": {
+			"button": {
+				"title": "Enter in contact with me"
+			},
+			"fields": {
+				"defaults": {
+					"name": { "value": "", "error": "Please enter a valid name" },
+					"companyName": { "value": "", "error": "Please enter a valid name" },
+					"email": {
+						"value": "",
+						"error": "Please enter a valid email address"
+					},
+					"phone": { "value": "", "error": "Please enter a valid phone number" }
+				},
+				"selects": {
+					"country": {
+						"id": "contact-country",
+						"name": "country",
+						"label": "Country",
+						"placeholder": "Select an country",
+						"description": "Please select an country",
+						"options": {
+							"DR": {
+								"value": "Republica Dominicana",
+								"label": "Dominican Republic"
+							},
+							"US": {
+								"value": "Estados Unidos",
+								"label": "United States"
+							},
+							"ES": {
+								"value": "España",
+								"label": "Spain"
+							}
+						}
+					}
+				},
+				"inputs": {
+					"name": {
+						"id": "contact-name",
+						"name": "name",
+						"label": "Name",
+						"placeholder": "Joe Average",
+						"description": "What's your name?"
+					},
+					"company": {
+						"id": "contact-company",
+						"name": "companyName",
+						"label": "Company Name",
+						"placeholder": "Acme Corp.",
+						"description": "What company do you work for?"
+					},
+					"email": {
+						"id": "contact-email",
+						"name": "email",
+						"label": "Email",
+						"placeholder": "name@company.com",
+						"description": "What is your email address?"
+					},
+					"phone": {
+						"name": "phoneNumber",
+						"id": "contact-phone",
+						"email": "phone",
+						"label": "Phone",
+						"placeholder": "123-456-7890",
+						"description": "What is your phone number?"
+					}
+				}
+			}
+		}
+	}
+}

@@ -9,7 +9,7 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
-
+./portafolio-458003-69a6daeb5774.json
 # testing
 /coverage
 
