@@ -131,6 +131,7 @@ export default function NavbarMenu() {
 											{key === "github" ? (
 												<Button
 													size="sm"
+													className="w-full md:!w-auto"
 													onClick={() => router.push(social(`${key}.url`))}
 												>
 													{
@@ -146,6 +147,7 @@ export default function NavbarMenu() {
 												<Button
 													variant="outline"
 													size="sm"
+													className="w-full md:!w-auto"
 													onClick={() => router.push(social(`${key}.url`))}
 												>
 													{
