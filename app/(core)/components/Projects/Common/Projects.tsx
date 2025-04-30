@@ -53,7 +53,6 @@ export default function CommonProjects() {
 			}).then((res) => res.json()),
 	});
 
-	console.log(data);
 
 	if (isFetched) {
 		return (

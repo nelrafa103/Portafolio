@@ -23,7 +23,6 @@ export const updateProject = internalMutation({
 		const insertions = await Promise.all(
 			args.repos.map(async (repo) => await ctx.db.insert("projects", repo)),
 		);
-		console.log("insertions", insertions);
 		return insertions;
 	},
 });

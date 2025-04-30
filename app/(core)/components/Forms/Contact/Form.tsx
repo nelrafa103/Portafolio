@@ -109,7 +109,6 @@ export default function ContactForm({
   const selectsKeys = ["country"];
   const inputKeys = ["name", "email", "company", "phone"];
 
-  console.log(selects);
   return (
     <section className="relative py-32">
       <div className="pointer-events-none absolute inset-x-0 -top-20 -bottom-20 bg-[radial-gradient(ellipse_35%_15%_at_40%_55%,hsl(var(--accent))_0%,transparent_100%)] lg:bg-[radial-gradient(ellipse_12%_20%_at_60%_45%,hsl(var(--accent))_0%,transparent_100%)]" />

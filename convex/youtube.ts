@@ -17,7 +17,6 @@ export const getLastYoutubeVideo = internalAction({
 				id: response.id.videoId,
 			},
 		);
-		console.log(insertion);
 	},
 });
 
