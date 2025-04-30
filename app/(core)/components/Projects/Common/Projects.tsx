@@ -17,12 +17,7 @@ import TypeScript from "../../Icons/Typescript";
 import JavaScript from "../../Icons/Javascript";
 import Rust from "../../Icons/Rust";
 import Markdown from "../../Icons/Markdown";
-import {
-	StarFillIcon,
-	StarIcon,
-	
-} from "@primer/octicons-react";
-import { useEffect, useState } from "react";
+import { StarFillIcon, StarIcon } from "@primer/octicons-react";
 import TanStack from "../../Icons/TanStack";
 import { AnimatePresence, motion } from "motion/react";
 import { useRouter } from "next/navigation";
@@ -44,7 +39,6 @@ export default function CommonProjects() {
 	};
 	const repos = useQuery(api.projects.getProjects);
 	const t = useTranslations("projects");
-	const [progress, setProgress] = useState<number>(0);
 	const { data, error, isLoading, isFetched } = useTanQuery({
 		queryKey: ["repos"],
 		queryFn: () =>
@@ -59,9 +53,8 @@ export default function CommonProjects() {
 			}).then((res) => res.json()),
 	});
 
-	useEffect(() => {
-		setTimeout(() => setProgress(progress + 1), 12);
-	}, [progress]);
+	console.log(data);
+
 	if (isFetched) {
 		return (
 			<AnimatePresence>
@@ -97,10 +90,7 @@ export default function CommonProjects() {
 
 										<CardContent>
 											<p className="text-sm text-justify">
-												{data.data[0].translations[index].translatedText !==
-												"null"
-													? data.data[0].translations[index].translatedText
-													: t("items.description.default")}
+												{data.data[0].translations[index].translatedText.length > 5 ? data.data[0].translations[index].translatedText : t("items.description.default")}
 											</p>
 										</CardContent>
 										<CardFooter className="gap-2">
