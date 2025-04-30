@@ -57,7 +57,7 @@ export function Hit({ hit }: { hit: any }) {
 						</div>
 					) : (
 						<p>
-							{data.data[0].translations[0].translatedText !== "null"
+							{data.data[0].translations[0].translatedText.length > 5
 								? data.data[0].translations[0].translatedText
 								: ""}
 						</p>
