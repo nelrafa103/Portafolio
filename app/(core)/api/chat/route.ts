@@ -10,8 +10,6 @@ export const maxDuration = 30;
 export async function POST(req: Request) {
 	const { messages } = await req.json();
 
-	console.log(data);
-	console.log(messages);
 	const info = data.data.map((item) => item.chunk_text);
 
 	const systemMessage = {

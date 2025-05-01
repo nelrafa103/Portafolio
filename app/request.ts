@@ -9,7 +9,6 @@ export default getRequestConfig(async () => {
 	let locale: string;
 	const headersStore = await headers();
 	const language = headersStore.get("Accept-Language") || "en";
-  console.log(language)
 	 
 	if (language.startsWith("es")) {
     locale = "es"
@@ -17,7 +16,6 @@ export default getRequestConfig(async () => {
     locale = "en"
   }
 
-  console.log("Locacion:",locale)
 	return {
 		locale,
 		messages: (await import(`@/app/(core)/(routes)/i18n/${locale}.json`))
