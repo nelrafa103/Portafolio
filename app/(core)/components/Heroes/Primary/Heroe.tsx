@@ -2,11 +2,8 @@
 import { Button } from "@/components/ui/button";
 import {
 	ArrowRight,
-	Ban,
 	CircleCheck,
 	CircleX,
-	Cookie,
-	Database,
 	Mail,
 	SendHorizonal,
 } from "lucide-react";
@@ -14,28 +11,15 @@ import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import toast, { Toaster } from "react-hot-toast";
 import { AnimatePresence } from "motion/react";
-
 import { useTranslations } from "next-intl";
 import { icons, type IconType } from "@/app/(core)/lib/icons";
 import { useQuery } from "convex/react";
 import { api } from "@/convex/_generated/api";
-import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 import CookiesStore, {
 	type CookiesStoreType,
 } from "@/app/(core)/stores/cookies";
 import AnimatedContent from "../../Animations/AnimatedContent";
-const menuItems = [
-	{ name: "Features", href: "#" },
-	{ name: "Solution", href: "#" },
-	{ name: "Pricing", href: "#" },
-	{ name: "About", href: "#" },
-];
-const notify = () =>
-	toast("Accept the cookies", {
-		duration: Number.POSITIVE_INFINITY,
-	});
 
 export default function PrimaryHero() {
 	const params = useSearchParams();
@@ -51,13 +35,6 @@ export default function PrimaryHero() {
 	);
 	const userChoice = CookiesStore(
 		(state) => (state as CookiesStoreType).userChoice,
-	);
-	const setChoice = CookiesStore(
-		(state) => (state as CookiesStoreType).setChoice,
-	);
-
-	const setCookies = CookiesStore(
-		(state) => (state as CookiesStoreType).setCookies,
 	);
 	const frameworks = ["nextjs", "tanstack", "angular"];
 	const [query] = useQuery(api.youtube.queryLastYoutubeVideo) || [
@@ -87,43 +64,6 @@ export default function PrimaryHero() {
 		<>
 			<main>
 				<section className="overflow-hidden">
-					{!userChoice && (
-						<Toaster
-							position="bottom-right"
-							reverseOrder={false}
-							gutter={8}
-							containerClassName=""
-							containerStyle={{}}
-						>
-							{(toast) => (
-								<Alert className="w-[25%]">
-									<Database className="h-4 w-4" />
-									<AlertTitle className="capitalize">
-										{t("cookies.title")}
-									</AlertTitle>
-									<AlertDescription className="gap-2">
-										{t("cookies.description")}
-										<div className="flex gap-2 items-center ">
-											<Button
-												onClick={() => {
-													setChoice();
-													setCookies();
-												}}
-											>
-												<Cookie />
-												{t("cookies.button.acept")}
-											</Button>
-											<Button variant={"secondary"} onClick={() => setChoice()}>
-												<Ban />
-												{t("cookies.button.decline")}
-											</Button>
-										</div>
-									</AlertDescription>
-								</Alert>
-							)}
-						</Toaster>
-					)}
-
 					<div className="relative mx-auto px-6 py-28 lg:py-20">
 						<div className="lg:flex lg:items-center lg:gap-12">
 							<div className="relative z-10 mx-auto max-w-xl text-center lg:ml-0 lg:w-1/2 lg:text-left">
