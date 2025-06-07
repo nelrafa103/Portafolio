@@ -13,12 +13,12 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { AnimatePresence } from "motion/react";
 import { useTranslations } from "next-intl";
-import { icons, type IconType } from "@/app/(core)/lib/icons";
+import { icons, type IconType } from "@/app//lib/icons";
 import { useQuery } from "convex/react";
 import { api } from "@/convex/_generated/api";
 import CookiesStore, {
 	type CookiesStoreType,
-} from "@/app/(core)/stores/cookies";
+} from "@/app/lib/cookies";
 import AnimatedContent from "../../Animations/AnimatedContent";
 
 export default function PrimaryHero() {

@@ -14,7 +14,7 @@ import { api } from "@/convex/_generated/api";
 import Flutter from "../../Icons/Flutter";
 import { getTranslations } from "next-intl/server";
 import { headers } from "next/headers";
-import Translationclient from "@/app/(core)/lib/translation";
+import Translationclient from "@/app/lib/translation";
 
 export default async function FeaturedProjects() {
 	const headersStore = await headers();

@@ -10,8 +10,8 @@ export const getLastYoutubeVideo = internalAction({
 
 		const [_, response] = (await request.json()).items;
 
-    ctx.runMutation(internal.youtube.deleteAllVideos)
-		const insertion = await ctx.runMutation(
+		ctx.runMutation(internal.youtube.deleteAllVideos)
+		await ctx.runMutation(
 			internal.youtube.setLastYoutubeVideo,
 			{
 				id: response.id.videoId,
@@ -25,6 +25,12 @@ export const setLastYoutubeVideo = internalMutation({
 		id: v.string(),
 	},
 	handler: async (ctx, args) => {
+		const videos = await ctx.db.query("videos").collect();
+
+		for (const doc of videos) {
+			await ctx.db.delete(doc._id);
+		}
+
 		await ctx.db.insert("videos", {
 			channelId: process.env.CHANNEL_ID,
 			videoId: args.id,
@@ -55,6 +61,6 @@ export const deleteAllVideos = internalMutation({
 		const deletions = await Promise.all(
 			videos.map(async (video) => await ctx.db.delete(video._id)),
 		);
-    return deletions;
+		return deletions;
 	},
 });

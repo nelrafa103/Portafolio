@@ -1,5 +1,5 @@
-import GitHub from "@/app/(core)/components/Icons/Github";
-import LinkedIn from "@/app/(core)/components/Icons/LinkedIn";
+import GitHub from "@/app/components/Icons/Github";
+import LinkedIn from "@/app/components/Icons/LinkedIn";
 import Clerk from "../components/Icons/Clerk";
 import Docker from "../components/Icons/Docker";
 import React from "../components/Icons/React";

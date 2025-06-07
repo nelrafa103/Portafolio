@@ -4,12 +4,11 @@ function setLanguageCodes(language: string) {
       targetLanguageCode: "en-US",
       sourceLanguageCode: "es-DO",
     };
-  } else {
-    return {
-      targetLanguageCode: "es-DO",
-      sourceLanguageCode: "en-US",
-    };
   }
+  return {
+    targetLanguageCode: "es-DO",
+    sourceLanguageCode: "en-US",
+  };
 }
 
 export { setLanguageCodes };

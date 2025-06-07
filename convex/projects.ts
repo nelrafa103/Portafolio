@@ -27,6 +27,19 @@ export const updateProject = internalMutation({
   },
 });
 
+export const deleteAllProjects = internalMutation({
+  args: {},
+  handler: async (ctx, args) => {
+    const existingData = await ctx.db.query("projects").collect();
+
+    const response = await Promise.all(existingData.map(async (doc) => await ctx.db.delete(doc._id)))
+
+    return response;
+
+  }
+})
+
+
 export const getProjects = query({
   args: {},
   handler: async (ctx, args) => {
@@ -71,7 +84,9 @@ export const getGithubRepos = internalAction({
     );
 
     const response = repos.map((repo) => repo.data);
-
+    const cleaner = await ctx.runMutation(
+      internal.projects.deleteAllProjects)
+    console.log("Cleaner response:", cleaner);
     // biome-ignore lint/suspicious/noExplicitAny: <explanation>
     const mutation: any = await ctx.runMutation(
       internal.projects.updateProject,

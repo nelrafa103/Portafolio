@@ -8,7 +8,7 @@ import Link from "next/link";
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { icons } from "@/app/(core)/lib/icons";
+import { icons } from "@/app/lib/icons";
 import { Authenticated, AuthLoading, Unauthenticated } from "convex/react";
 import { UserButton } from "@clerk/clerk-react";
 import Flutter from "../../Icons/Flutter";

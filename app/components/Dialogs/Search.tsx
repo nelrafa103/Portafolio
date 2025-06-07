@@ -66,7 +66,7 @@ export default function SearchDialog() {
 					<Hits
 						hitComponent={Hit}
 						classNames={{
-							root: "dark:!bg-[#0a0a0a] ",
+							root: "dark:!bg-[#0a0a0a] max-h-[60vh] overflow-y-auto",
 							list: "dark:!bg-[#0a0a0a] !space-y-2",
 							item: "dark:!bg-[#0a0a0a] dark:border",
 						}}
